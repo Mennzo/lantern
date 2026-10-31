@@ -1,1 +1,2 @@
 Lantern notes
+Todo: add CLI options
