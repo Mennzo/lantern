@@ -7,7 +7,7 @@ sub = parser.add_subparsers(dest="cmd")
 sub.add_parser("add")
 
 list_parser = sub.add_parser("list")
-list_parser.add_argument("--sort", action="store_true")
+list_parser.add_argument("--sort", action="store_true", help="Sort tasks alphabetically by title")
 list_parser.add_argument("--done", action="store_true", help="Show only completed tasks")
 
 export_parser = sub.add_parser("export")
