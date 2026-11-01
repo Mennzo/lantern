@@ -6,3 +6,6 @@
 
 Tasks are stored locally in `tasks.json`.
 If the file does not exist, loading returns an empty list.
+
+
+## Command examples
