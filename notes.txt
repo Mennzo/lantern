@@ -1,0 +1,3 @@
+Lantern notes
+Todo: add CLI options
+Todo: support CSV export
