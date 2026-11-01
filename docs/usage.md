@@ -9,3 +9,4 @@ If the file does not exist, loading returns an empty list.
 
 
 ## Command examples
+- `python lantern.py remove "Study Git"` removes a task.
