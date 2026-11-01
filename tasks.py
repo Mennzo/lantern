@@ -5,5 +5,7 @@ def add_task(title):
     TASKS.append(task)
     return task
 
-def list_tasks():
+def list_tasks(sort_by_title=False):
+    if sort_by_title:
+        return sorted(TASKS, key=lambda task: task["title"])
     return TASKS
