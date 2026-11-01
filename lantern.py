@@ -15,8 +15,12 @@ export_parser.add_argument("--csv", action="store_true", help="Export tasks as C
 args = parser.parse_args()
 
 if args.cmd == "list":
-    for t in list_tasks(only_done=args.done):
-        print(t["title"])
+    tasks = list_tasks(only_done=args.done)
+    if not tasks:
+        print("No tasks found.")
+    else:
+        for task in tasks:
+            print(task["title"])
 elif args.cmd == "export" and args.csv:
     print(export_csv(list_tasks()))
 else:
